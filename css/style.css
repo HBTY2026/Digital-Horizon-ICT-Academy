@@ -1,0 +1,208 @@
+/* ===========================
+   Digital Horizon ICT Academy
+   Version 1.0
+=========================== */
+
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Reset */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f5f8fc;
+    color:#333;
+    line-height:1.6;
+}
+
+/* Top Bar */
+
+.top-bar{
+    background:#0b3d91;
+    color:#fff;
+    text-align:center;
+    padding:10px;
+    font-size:14px;
+}
+
+/* Header */
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#003366;
+    padding:15px 50px;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.logo h2{
+    color:#fff;
+    font-size:24px;
+}
+
+/* Navigation */
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:25px;
+}
+
+nav ul li a{
+    color:#fff;
+    text-decoration:none;
+    font-weight:500;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:#00c3ff;
+}
+
+/* Search */
+
+.search-box input{
+    padding:10px 15px;
+    border:none;
+    border-radius:6px;
+    outline:none;
+}
+
+/* Hero */
+
+.hero{
+    background:linear-gradient(135deg,#0056d2,#0099ff);
+    color:#fff;
+    text-align:center;
+    padding:100px 20px;
+}
+
+.hero h1{
+    font-size:48px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    max-width:700px;
+    margin:auto;
+    margin-bottom:35px;
+    font-size:18px;
+}
+
+.btn{
+    display:inline-block;
+    background:#fff;
+    color:#0056d2;
+    text-decoration:none;
+    padding:14px 30px;
+    border-radius:8px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#ffd54f;
+}
+
+/* Grades */
+
+.grades{
+    padding:70px 40px;
+}
+
+.grades h2{
+    text-align:center;
+    font-size:36px;
+    color:#003366;
+    margin-bottom:40px;
+}
+
+.grade-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#fff;
+    border-radius:15px;
+    padding:30px;
+    text-align:center;
+    box-shadow:0 8px 20px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card h3{
+    color:#0056d2;
+    margin-bottom:10px;
+}
+
+.card p{
+    color:#666;
+    margin-bottom:20px;
+}
+
+.card button{
+    background:#0056d2;
+    color:#fff;
+    border:none;
+    padding:12px 28px;
+    border-radius:6px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.card button:hover{
+    background:#003d99;
+}
+
+/* Footer */
+
+footer{
+    background:#003366;
+    color:#fff;
+    text-align:center;
+    padding:25px;
+    margin-top:60px;
+}
+
+/* Responsive */
+
+@media(max-width:900px){
+
+header{
+    flex-direction:column;
+    gap:20px;
+}
+
+nav ul{
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.hero h1{
+    font-size:34px;
+}
+
+.hero p{
+    font-size:16px;
+}
+
+.search-box input{
+    width:100%;
+}
+
+}
